@@ -3,6 +3,21 @@
   position: relative;
 }
 
+.header__title {
+  max-width: 467px;
+  font-weight: 800;
+  font-size: 200px;
+  line-height: 156px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.07;
+  position: absolute;
+  z-index: 4;
+  top: -5px;
+  left: -400px;
+}
+
 .header__map {
   position: absolute;
   right: 0;
@@ -16,7 +31,7 @@
   position: absolute;
   z-index: 5;
   top: 0;
-  left: 0;
+  left: -100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -100,20 +115,7 @@
   }
 }
 
-.header__title {
-  max-width: 467px;
-  font-weight: 800;
-  font-size: 200px;
-  line-height: 156px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  mix-blend-mode: normal;
-  opacity: 0.07;
-  position: absolute;
-  z-index: 4;
-  top: -5px;
-  left: -10px;
-}
+
 
 .swiper-container.header-slider {
   width: 100vw;
@@ -141,8 +143,6 @@
   .item__info-subtext {
     margin-bottom: 13px;
   }
-
-
 }
 
 .header-slider__btn-prev, .header-slider__btn-next {
@@ -172,7 +172,7 @@
 .slider-dots {
   position: absolute;
   right: 80px;
-  bottom: 40px;
+  bottom: -40px;
   max-width: 920px;
   width: 100%;
   color: white;
@@ -215,7 +215,121 @@
 
 .header__arrows {
   position: absolute;
-  bottom: 40px;
+  bottom: 60px;
   left: 210px;
   z-index: 5;
+  //opacity: 0;
+  //animation: fadeInDown 1.25s infinite ease-in-out;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    bottom: 40px;
+  }
+}
+
+.fadeInDown {
+  animation: fadeInDown 1.25s infinite ease-in-out;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 1s;
+  animation-fill-mode: both;
+}
+
+.delay-500ms {
+  animation-delay: .5s;
+}
+
+.delay-1s {
+  animation-delay: 1s;
+}
+
+.delay-2s {
+  animation-delay: 2s;
+}
+
+.delay-3s {
+  animation-delay: 3s;
+}
+
+.delay-4s {
+  animation-delay: 4s;
+}
+
+.delay-5s {
+  animation-delay: 5s;
+}
+
+.line-animation {
+  stroke-dashoffset: 600;
+  stroke-dasharray: 600;
+  animation: drawLine 3s ease infinite 6s;
+}
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+
+}
+@keyframes fadeInLeft {
+from {
+  opacity: 0;
+}
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 1s 0.4s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInTop {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: auto;
+    opacity: 1;
+    bottom: 40px;
+  }
+}
+
+.fadeInTop {
+  animation: fadeInTop 1s 0.4s;
+  animation-fill-mode: both;
+}
+
+@keyframes inLeft {
+  from{
+    opacity: 0;
+  }
+  to {
+    left: -10px;
+  }
+}
+
+.inLeft {
+  animation: inLeft 1s 0.4s;
+  animation-fill-mode: both;
 }

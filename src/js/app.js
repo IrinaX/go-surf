@@ -2,7 +2,7 @@
 import Swiper from 'swiper';
 import 'swiper/js/swiper.min'
 import 'bootstrap.native/dist/bootstrap-native-v4';
-
+import '@fortawesome/fontawesome-free/js/all.min';
 
 var sliderDots = new Swiper('.slider-dots', {
     spaceBetween: 40,
@@ -19,6 +19,6 @@ var headerSlider = new Swiper('.header-slider', {
         prevEl: '.header-slider__btn-prev',
     },
     thumbs: {
-        swiper: sliderDots
+        swiper: sliderDots,
     }
 });
