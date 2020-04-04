@@ -1,0 +1,39 @@
+.subtitle-right,.subtitle-left {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 7.33333px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  position: relative;
+  display: inline-block;
+
+}
+.subtitle-right{
+  &:before{
+    content: '';
+    position: absolute;
+    left: -102px;
+    top: 47%;
+    width: 80px;
+    height: 1px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+}
+.subtitle-left{
+  &:before{
+    content: '';
+    position: absolute;
+    right: 102px;
+    top: 47%;
+    width: 80px;
+    height: 1px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+}
