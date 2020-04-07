@@ -1,0 +1,99 @@
+.surf {
+  position: relative;
+  padding: 160px 0 120px;
+  background: url(../images/surf/map-mark.svg) 110% 225px no-repeat;
+  background-size: auto;
+}
+
+.surf__subtitle {
+  text-align: right;
+  margin: -86px 80px 0 0;
+}
+
+.serf-slider {
+  padding-top: 57px; /////////////
+  position: relative;
+
+  .slider__btn-wrap {
+    margin: 0 90px 32px 0;
+    opacity: .25;
+  }
+
+  .swiper-slide:nth-child(4n+1) {
+    .serf-box {
+      margin-top: 32px;
+    }
+  }
+
+  .swiper-slide:nth-child(4n+3) {
+    .serf-box {
+      margin-top: 89px;
+    }
+  }
+
+  //.swiper-slide-active {
+  //  .serf-box{
+  //    .serf-box__inner{
+  //      background: rgba(#1C2121, .3);
+  //      .serf-box__inner-btn{
+  //        display: block;
+  //      }
+  //    }
+  //  }
+  //}
+}
+
+.serf-box {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .serf-box__inner {
+    min-height: 750px;
+    padding: 72px 40px 0 40px;
+    background: rgba(#1C2121, .85);
+    position: relative;
+    &:hover{
+      background: rgba(#1C2121, .3);
+      transition: all .5s;
+      .serf-box__inner-btn{
+        display: block;
+      }
+    }
+
+    .serf-box__inner-title {
+      line-height: 36px;
+      max-width: 170px;
+      margin-bottom: 0;
+    }
+
+    .serf-box__inner-location {
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      transform: rotate(-90deg);
+      width: 0;
+      height: 0;
+      white-space: nowrap;
+      position: absolute;
+      bottom: 80px;
+      left: 40px;
+
+      span {
+        font-weight: 100;
+      }
+    }
+
+    .serf-box__inner-btn {
+      position: absolute;
+      bottom: 0;
+      left: 45px;
+      text-align: center;
+      display: none;
+    }
+  }
+}
+
+

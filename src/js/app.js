@@ -22,3 +22,13 @@ var headerSlider = new Swiper('.header-slider', {
         swiper: sliderDots,
     }
 });
+var serfSlider = new Swiper('.serf-slider',{
+    spaceBetween: -40,
+    slidesPerView: 4,
+    navigation: {
+        // nextEl: '.swiper-button-next',
+        // prevEl: '.swiper-button-prev',/////////////////////////////////////////////////////////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        nextEl: '.serf-slider__btn-next',
+        prevEl: '.serf-slider__btn-prev',
+    },
+});

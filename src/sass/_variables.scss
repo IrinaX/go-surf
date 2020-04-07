@@ -14,23 +14,23 @@ $secondary-gradient: linear-gradient(145.78deg, #6580E2 7.29%, #324FB5 94.33%);
 $base-family: Fira Sans, sans-serif;
 $base-font: 16px/19px $base-family;
 
-$h1-font: 800 80px/86px $base-family;
+$h1-font: 800 200px/156px $base-family;
 $h1-font-sm: 500 55px/86px $base-family;
-$h1-margin-bottom: 48px;
+$h1-margin-bottom: 0;
 
-$h2-font: 500 64px/130% $base-family;
+$h2-font: 800 80px/100% $base-family;
 $h2-font-sm: 500 45px/130% $base-family;
-$h2-margin-bottom: 36px;
+$h2-margin-bottom: 40px;
 
-$h3-font: 500 48px/130% $base-family;
+$h3-font: 800 40px/130% $base-family;
 $h3-font-sm: 500 32px/130% $base-family;
 $h3-margin-bottom: 19px;
 
-$h4-font: 800 40px/48px $base-family;
+$h4-font: 500 22px/32px $base-family;
 $h4-font-sm: $h4-font;
-$h4-margin-bottom: 18px;
+$h4-margin-bottom: 8px;
 
-$h5-font: 500 24px/130% $base-family;
+$h5-font: 500 18px/22 $base-family;
 $h5-font-sm: $h5-font;
 $h5-margin-bottom: 6px;
 
@@ -52,7 +52,7 @@ $spacers: (
         10: ($spacer * 10)
 );
 
-$grid-gutter-width: 30px;
+$grid-gutter-width: 0px;
 
 $grid-breakpoints: (
         xs: 0,
@@ -67,7 +67,7 @@ $container-max-widths: (
         sm: 576px,
         md: 720px,
         lg: 960px,
-        xl: 1260px
+        xl: 1920px
 );
 
 $fa-font-path: "../fonts";

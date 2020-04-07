@@ -1,0 +1,115 @@
+/*header*/
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    bottom: 40px;
+  }
+}
+
+.fadeInDown {
+  animation: fadeInDown 1.25s infinite ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 1s;
+  animation-fill-mode: both;
+}
+
+.delay-500ms {
+  animation-delay: .5s;
+}
+
+.delay-1s {
+  animation-delay: 1s;
+}
+
+.delay-2s {
+  animation-delay: 2s;
+}
+
+.delay-3s {
+  animation-delay: 3s;
+}
+
+.delay-4s {
+  animation-delay: 4s;
+}
+
+.delay-5s {
+  animation-delay: 5s;
+}
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.line-animation {
+  stroke-dashoffset: 600;
+  stroke-dasharray: 600;
+  animation: drawLine 3s ease infinite 6s;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 1s 0.4s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInTop {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: auto;
+    opacity: 1;
+    bottom: 40px;
+  }
+}
+
+.fadeInTop {
+  animation: fadeInTop 1s 0.4s;
+  animation-fill-mode: both;
+}
+
+@keyframes inLeft {
+  from {
+    opacity: 0;
+  }
+  to {
+
+    left: -10px;
+  }
+}
+
+.inLeft {
+  animation: inLeft 1s 0.4s;
+  animation-fill-mode: both;
+}
+
+/*header end*/

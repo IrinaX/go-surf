@@ -1,4 +1,4 @@
-.subtitle-right,.subtitle-left {
+.headline-left, .headline-right {
   font-weight: 300;
   font-size: 22px;
   line-height: 32px;
@@ -9,10 +9,11 @@
   opacity: 0.5;
   position: relative;
   display: inline-block;
-
+  margin-bottom: 4px;
 }
-.subtitle-right{
-  &:before{
+
+.headline-left {
+  &:before {
     content: '';
     position: absolute;
     left: -102px;
@@ -24,8 +25,9 @@
     opacity: 0.5;
   }
 }
-.subtitle-left{
-  &:before{
+
+.headline-right {
+  &:before {
     content: '';
     position: absolute;
     right: 102px;
@@ -35,5 +37,17 @@
     background: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.5;
+  }
+}
+
+.subtitle {
+  display: inline-block;
+  text-align: right;
+  .subtitle__head {
+    margin-bottom: 0;
+    padding-right: 10px;
+    span {
+      font-weight: 100;
+    }
   }
 }

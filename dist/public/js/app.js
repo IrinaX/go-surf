@@ -11873,6 +11873,16 @@ var headerSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.header-s
     swiper: sliderDots
   }
 });
+var serfSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.serf-slider', {
+  spaceBetween: -40,
+  slidesPerView: 4,
+  navigation: {
+    // nextEl: '.swiper-button-next',
+    // prevEl: '.swiper-button-prev',/////////////////////////////////////////////////////////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    nextEl: '.serf-slider__btn-next',
+    prevEl: '.serf-slider__btn-prev'
+  }
+});
 
 /***/ }),
 

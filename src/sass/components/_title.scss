@@ -1,0 +1,33 @@
+.title-wrap {
+  .title {
+    color: rgba(#fff, .02);
+    font-size: 200px;
+    font-weight: 800;
+    position: relative;
+    //left: -50px;
+    transform: translateX(-50px);
+    line-height: normal;
+    display: inline-block;
+    text-transform: uppercase;
+
+    h2 {
+      color: #fff;
+      margin: 0;
+      position: absolute;
+      top: 15px;
+      right: -5px;
+
+      &:after {
+        content: '';
+        width: 80px;
+        height: 1px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $primary;
+      }
+    }
+  }
+}
+
+

@@ -1,59 +1,87 @@
 @import "../variables";
 
 .btn {
-  border-radius: 80px;
-  font-family: Franxurter Totally, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+  font-weight: 800;
+  font-size: 40px;
   line-height: 100%;
-  display: inline-block;
-  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #FFFFFF;
   text-align: center;
-  padding: 13px 30px;
-  background: #FFFFFF;
-  border: none;
-  box-sizing: border-box;
-  box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.18);
-  outline: none !important;
-  position: relative;
-  overflow: hidden;
+
+  span {
+    position: relative;
+    padding: 17px;
+    padding-bottom: 12px;
+    background: $primary;
+    margin-left: 8px;
+    display: inline-block;
+
+    img {
+      padding: 0 0 5px 16px;
+    }
+
+    &:before {
+      content: '';
+      width: 20px;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      left: -10px;
+    }
+  }
+
+
+  //border-radius: 80px;
+  //font-family: Franxurter Totally, sans-serif;
+  //font-style: normal;
+  //
+  //display: inline-block;
+  //letter-spacing: 0.6px;
+  //
+  //padding: 13px 30px;
+  //background: #FFFFFF;
+  //border: none;
+  //box-sizing: border-box;
+  //box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.18);
+  //outline: none !important;
+  //position: relative;
+  //overflow: hidden;
 
   &:before {
-    content: "";
-    position: absolute;
-    top: -44px;
-    left: -73px;
-    width: 250px;
-    height: 85px;
-    background: url(../images/btn/btn-bg-shape-left.svg) 1px 1px no-repeat;
-    transition: transform 0.3s ease;
+    //content: "";
+    //position: absolute;
+    //top: -44px;
+    //left: -73px;
+    //width: 250px;
+    //height: 85px;
+    //background: url(../images/btn/btn-bg-shape-left.svg) 1px 1px no-repeat;
+    //transition: transform 0.3s ease;
   }
 
   &:after {
-    content: "";
-    position: absolute;
-    bottom: -39px;
-    right: -19px;
-    width: 146px;
-    height: 71px;
-    background: url(../images/btn/btn-bg-shape-right.svg) center no-repeat;
-    transition: transform 0.3s ease;
+    //content: "";
+    //position: absolute;
+    //bottom: -39px;
+    //right: -19px;
+    //width: 146px;
+    //height: 71px;
+    //background: url(../images/btn/btn-bg-shape-right.svg) center no-repeat;
+    //transition: transform 0.3s ease;
   }
 
   &:hover {
 
     //transform: translateY(-4px);
     //box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
-    text-decoration: none;
 
-    &:before {
-      transform: translate(-155px, -42px)
-    }
-
-    &:after {
-      transform: translate(155px, 42px)
-    }
+    //&:before {
+    //  transform: translate(-155px, -42px)
+    //}
+    //
+    //&:after {
+    //  transform: translate(155px, 42px)
+    //}
 
   }
 
