@@ -11855,12 +11855,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var sliderDots = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.slider-dots', {
+var sliderDotsHeader = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.slider-dots-header', {
   spaceBetween: 40,
   slidesPerView: 4,
   freeMode: true,
   watchSlidesVisibility: true,
-  watchSlidesProgress: true
+  watchSlidesProgress: true,
+  allowSlidePrev: false,
+  allowSlideNext: false
 });
 var headerSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.header-slider', {
   speed: 600,
@@ -11870,17 +11872,30 @@ var headerSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.header-s
     prevEl: '.header-slider__btn-prev'
   },
   thumbs: {
-    swiper: sliderDots
+    swiper: sliderDotsHeader
   }
+});
+var sliderMap = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.slider-map', {
+  // spaceBetween: 40,
+  slidesPerView: 8,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  allowSlidePrev: false,
+  allowSlideNext: false
 });
 var serfSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.serf-slider', {
   spaceBetween: -40,
   slidesPerView: 4,
+  centeredSlides: true,
   navigation: {
     // nextEl: '.swiper-button-next',
     // prevEl: '.swiper-button-prev',/////////////////////////////////////////////////////////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     nextEl: '.serf-slider__btn-next',
     prevEl: '.serf-slider__btn-prev'
+  },
+  thumbs: {
+    swiper: sliderMap
   }
 });
 
