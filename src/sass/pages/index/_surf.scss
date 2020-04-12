@@ -11,16 +11,17 @@
 }
 
 .slider-map {
-  max-width: 1200px;
+  max-width: 1480px;
   min-height: 635px;
   background: url(../images/surf/map.png) center no-repeat;
-  background-size: cover;
+  background-size: contain;
   margin: 0 auto;
 
   .swiper-wrapper {
     min-height: 635px;
     .swiper-slide{
       cursor: pointer;
+      width: fit-content !important;
     }
   }
   .swiper-slide-thumb-active{
@@ -116,13 +117,13 @@
 }
 
 .slider-dots--1 {
-  top: 335px;
-  left: 0;
+  top: 328px;
+  left: 128px;
 }
 
 .slider-dots--2 {
-  top: 270px;
-  left: 0;
+  top: 293px;
+  left: 252px;
   .slider-dots__circle{
     position: relative;
     &:before{
@@ -133,40 +134,56 @@
       height: 17px;
       background-size: cover;
       top: -25px;
-      right: -15px;
+      right: -20px;
     }
   }
 
 }
 
 .slider-dots--3 {
-  top: 330px;
-  left: 25px;
+  top: 317px;
+  left: 420px;
 }
 
 .slider-dots--4 {
-  top: 470px;
-  left: -25px;
+  top: 503px;
+  left: 481px;
 }
 
 .slider-dots--5 {
-  top: 230px;
-  left: -65px;
+  top: 210px;
+  left: 572px;
+  &.swiper-slide-thumb-active{
+    .slider-dots__content {
+      position: absolute;
+      top: 50px;
+      height: fit-content;
+      &:after{
+        content: '';
+        position: absolute;
+        border-bottom: none;
+        border-top: 20px solid $primary;
+        top: -35px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    }
+  }
 }
 
 .slider-dots--6 {
-  top: 550px;
-  left: -120px;
+  top: 558px;
+  left: 657px;
 }
 
 .slider-dots--7 {
-  top: 375px;
-  left: -95px;
+  top: 388px;
+  left: 792px;
 }
 
 .slider-dots--8 {
-  top: 470px;
-  left: 35px;
+  top: 497px;
+  left: 1058px;
 }
 
 .serf-slider {
