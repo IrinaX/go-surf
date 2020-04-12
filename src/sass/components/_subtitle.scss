@@ -10,13 +10,9 @@
   position: relative;
   display: inline-block;
   margin-bottom: 4px;
-}
-
-.headline-left {
   &:before {
     content: '';
     position: absolute;
-    left: -102px;
     top: 47%;
     width: 80px;
     height: 1px;
@@ -26,17 +22,15 @@
   }
 }
 
+.headline-left {
+  &:before {
+    left: -102px;
+  }
+}
+
 .headline-right {
   &:before {
-    content: '';
-    position: absolute;
-    right: 102px;
-    top: 47%;
-    width: 80px;
-    height: 1px;
-    background: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.5;
+    right: -102px;
   }
 }
 
@@ -45,9 +39,17 @@
   text-align: right;
   .subtitle__head {
     margin-bottom: 0;
-    padding-right: 10px;
+    padding-right: 8px;
     span {
       font-weight: 100;
     }
+  }
+}
+.description {
+  margin-left: 135px;
+  display: inline-block;
+
+  &__head {
+    margin-bottom: 0;
   }
 }
