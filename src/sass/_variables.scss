@@ -56,7 +56,7 @@ $grid-gutter-width: 0px;
 
 $grid-breakpoints: (
         xs: 0,
-        s:  376px,
+        s: 376px,
         sm: 576px,
         md: 768px,
         lg: 1024px,
@@ -91,7 +91,7 @@ $fa-font-path: "../fonts";
 
 $breakpoints-for-media: (//медиа min-width 576px это <= 576px, $grid-breakpoints на 1px меньше для медиа
         xs: 0,
-        s:  375px,
+        s: 375px,
         sm: 575px,
         md: 767px,
         lg: 1023px,
@@ -113,4 +113,26 @@ $breakpoints-for-media: (//медиа min-width 576px это <= 576px, $grid-bre
   }
 }
 
+@mixin scrollbars($size, $foreground-color, $background-color) {/*$background-color: mix($foreground-color, white,  50%)*/
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    border-radius: 50px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
 

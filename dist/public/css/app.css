@@ -13,6 +13,22 @@ body {
   font-weight: 400;
   color: white;
   background-color: #171919;
+  /*$background-color: mix($foreground-color, white,  50%)*/
+}
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 50px;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+body {
+  scrollbar-face-color: grey;
+  scrollbar-track-color: transparent;
 }
 
 h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
@@ -82,7 +98,7 @@ p a:hover, .list-styled a:hover {
   text-decoration: none;
 }
 
-.surf, .travel, .sleep, .shop {
+.surf, .holder, .shop {
   padding: 160px 0 120px;
 }
 
@@ -1031,43 +1047,188 @@ ul.list-styled li:before {
   display: none;
 }
 
-.travel {
-  background-image: url(../images/travel/travel-bg.png);
+.holder {
   background-position: bottom right;
   background-repeat: no-repeat;
-  padding-bottom: 220px;
 }
-.travel .travel-slider {
+.holder .holder-slider {
   position: relative;
 }
-.travel .travel-slider .slider__btn-wrap {
+.holder .holder-slider .slider__btn-wrap {
   margin: 0;
   position: absolute;
   right: 85px;
   top: 210px;
   z-index: 20;
 }
-.travel .travel-slider .travel-slider__item-head {
+.holder .holder-slider .holder-slider__item-head {
   background-repeat: no-repeat;
   background-position: top left;
   min-height: 780px;
 }
-.travel .travel-slider .travel-slider__item-subtitle {
+.holder .holder-slider .holder-slider__item-subtitle {
   text-align: right;
   margin: 92px 80px 85px 0;
 }
-.travel .travel-slider .travel-slider__item-description {
+.holder .holder-slider .holder-slider__item-description {
+  margin-left: 135px;
   margin-top: -250px;
   padding-top: 132px;
   background-repeat: no-repeat;
   background-position: right center;
   min-height: 376px;
 }
-.travel .travel-slider .travel-slider__item-description img {
-  padding-left: 24px;
+.holder .holder-slider .holder-slider__item-description .holder-avia-logo {
+  padding-left: 23px;
 }
-.travel .travel-slider .travel-slider__item-btn {
+.holder .holder-slider .holder-slider__item-description .star-rating {
+  margin-left: 0;
+}
+.holder .holder-slider .holder-slider__item-btn {
   text-align: center;
+}
+.holder .holder-slider .holder-slider__info {
+  margin: 0 135px 70px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+.holder .holder-slider .holder-slider__info-item {
+  max-width: 330px;
+  min-height: 200px;
+  position: relative;
+}
+.holder .holder-slider .holder-slider__info-subtitle {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 195px;
+  height: 100%;
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: end;
+}
+.holder .holder-slider .holder-slider__info-title {
+  padding-left: 40px;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+.holder .holder-slider .holder-slider__info-title .clarification {
+  font-size: 14px;
+  line-height: 36px;
+  text-align: right;
+  letter-spacing: 5.25px;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: normal;
+}
+
+.travel {
+  background-image: url(../images/travel/travel-bg.png);
+  padding-bottom: 220px;
+}
+
+.sleep {
+  background-image: url(../images/sleep/frangipani.png);
+  padding: 60px 0 160px 0;
+}
+
+.shop {
+  background-image: url(../images/shop/shop-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-left: 119px;
+}
+
+.shop-item {
+  display: -webkit-box;
+  display: flex;
+  margin-right: 80px;
+}
+.shop-item .shop-item__info {
+  padding-top: 160px;
+  flex-basis: 64%;
+}
+.shop-item .shop-item__info .description {
+  margin-bottom: 15px;
+  margin-left: 16px;
+}
+.shop-item .shop-item__info .description .description__head {
+  line-height: 100%;
+  margin-top: 8px;
+}
+.shop-item .shop-item__info .shop-item__info-price {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+  margin-left: 16px;
+}
+.shop-item .shop-item__info .shop-item__info-price sup {
+  font-size: 18px;
+}
+.shop-item .shop-item__info .shop-item__info-price .star-rating {
+  display: block;
+}
+.shop-item .shop-item__info .shop-item__info-price .star-rating img {
+  margin-right: -28px;
+}
+.shop-item .shop-item__info .shop-item__info-btn {
+  margin-left: 16px;
+}
+.shop-item .shop-item__content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+          align-items: flex-end;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  flex-basis: 55%;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+.shop-item .shop-item__content .shop__extras .shop__extras-title {
+  margin-bottom: 25px;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.shop-item .shop-item__content .shop__extras .shop__extras-inner {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+.shop-item .shop-item__content .shop__extras .shop__extras-inner .shop__extras-box {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.shop-item .shop-item__content .shop__extras .shop__extras-inner .shop__extras-box:first-child {
+  margin-right: 57px;
+}
+.shop-item .shop-item__content .shop__extras .shop__extras-inner .shop__extras-box img {
+  margin-bottom: 36px;
+}
+.shop-item .shop-item__content .shop__extras .shop__extras-inner .shop__extras-box .shop__extras-name {
+  line-height: 22px;
+  letter-spacing: 8px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 16px;
+}
+.shop-item .shop-item__content .shop__extras .shop__extras-inner .shop__extras-box .shop__extras-price {
+  font-weight: 800;
+  line-height: 40px;
 }
 
 .headline-left, .headline-right {
@@ -1115,7 +1276,6 @@ ul.list-styled li:before {
 }
 
 .description {
-  margin-left: 135px;
   display: inline-block;
 }
 .description__head {
@@ -1187,46 +1347,9 @@ ul.list-styled li:before {
   margin-right: 15px;
 }
 
-.travel-slider__info {
-  margin: 0 135px 60px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
+.star-rating {
+  margin-left: -16px;
 }
-.travel-slider__info-item {
-  max-width: 330px;
-  min-height: 200px;
-  position: relative;
-}
-.travel-slider__info-subtitle {
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  width: 195px;
-  height: 100%;
-  white-space: nowrap;
-  position: absolute;
-  top: 0;
-  left: 0;
-  text-align: end;
-}
-.travel-slider__info-title {
-  padding-left: 40px;
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 130%;
-  text-transform: uppercase;
-}
-.travel-slider__info-title .clarification {
-  font-size: 14px;
-  line-height: 36px;
-  text-align: right;
-  letter-spacing: 5.25px;
-  color: rgba(255, 255, 255, 0.75);
-  font-weight: normal;
+.star-rating img {
+  margin-right: -21px;
 }

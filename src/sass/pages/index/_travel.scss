@@ -1,43 +1,5 @@
-.travel {
+.travel{
   background-image: url(../images/travel/travel-bg.png);
-  background-position: bottom right;
-  background-repeat: no-repeat;
   padding-bottom: 220px;
 
-  .travel-slider {
-    position: relative;
-    .slider__btn-wrap{
-      margin: 0;
-      position: absolute;
-      right: 85px;
-      top: 210px;
-      z-index: 20;
-    }
-    .travel-slider__item {
-      &-head{
-        background-repeat: no-repeat;
-        background-position: top left;
-        min-height: 780px;
-      }
-      &-subtitle {
-        text-align: right;
-        margin: 92px 80px 85px 0;
-      }
-
-      &-description {
-        margin-top: -250px;
-        padding-top: 132px;
-        background-repeat: no-repeat;
-        background-position: right center;
-        min-height: 376px;
-        img {
-          padding-left: 24px;
-        }
-      }
-      &-btn{
-        text-align: center;
-      }
-    }
-  }
 }
-

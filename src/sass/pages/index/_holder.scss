@@ -1,0 +1,88 @@
+.holder {
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  .holder-slider {
+    position: relative;
+    .slider__btn-wrap{
+      margin: 0;
+      position: absolute;
+      right: 85px;
+      top: 210px;
+      z-index: 20;
+    }
+    .holder-slider__item {
+      &-head{
+        background-repeat: no-repeat;
+        background-position: top left;
+        min-height: 780px;
+      }
+      &-subtitle {
+        text-align: right;
+        margin: 92px 80px 85px 0;
+      }
+
+      &-description {
+        margin-left: 135px;
+        margin-top: -250px;
+        padding-top: 132px;
+        background-repeat: no-repeat;
+        background-position: right center;
+        min-height: 376px;
+        .holder-avia-logo{
+          padding-left: 23px;
+        }
+        .star-rating{
+          margin-left: 0;
+        }
+      }
+      &-btn{
+        text-align: center;
+      }
+    }
+    .holder-slider__info {
+      margin: 0 135px 70px;
+      display: flex;
+      justify-content: space-between;
+
+
+      &-item {
+        max-width: 330px;
+        min-height: 200px;
+        position: relative;
+      }
+
+      &-subtitle {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        color: rgba(#fff, .5);
+        transform: rotate(-90deg);
+        width: 195px;
+        height: 100%;
+        white-space: nowrap;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: end;
+      }
+
+      &-title {
+        padding-left: 40px;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 130%;
+        text-transform: uppercase;
+        .clarification{
+          font-size: 14px;
+          line-height: 36px;
+          text-align: right;
+          letter-spacing: 5.25px;
+          color: rgba(#fff, .75);
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+

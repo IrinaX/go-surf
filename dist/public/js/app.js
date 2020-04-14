@@ -11898,24 +11898,27 @@ var serfSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.serf-slide
     swiper: sliderMap
   }
 });
-var travelSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.travel-slider', {
-  // spaceBetween: 40,
+var travelSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.holder-slider', {
   slidesPerView: 1,
   effect: 'fade',
   fadeEffect: {
     crossFade: true
   },
-  // speed: 500,
-  // centeredSlides:true,
   navigation: {
-    // nextEl: '.swiper-button-next',
-    // prevEl: '.swiper-button-prev',/////////////////////////////////////////////////////////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     nextEl: '.slider__btn-next',
     prevEl: '.slider__btn-prev'
-  } // thumbs: {
-  //     swiper: sliderMap,
-  // }
-
+  }
+});
+var shopSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.shop-slider', {
+  slidesPerView: 1,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  navigation: {
+    nextEl: '.slider__btn-next',
+    prevEl: '.slider__btn-prev'
+  }
 });
 
 /***/ }),

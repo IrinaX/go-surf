@@ -6,6 +6,7 @@ body {
   font-weight: 400;
   color: white;
   background-color: #171919;
+  @include scrollbars(5px, grey,transparent);
 }
 
 h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
@@ -84,6 +85,6 @@ p, .list-styled {
   }
 }
 
-.surf, .travel,.sleep,.shop{
+.surf, .holder,.shop{
   padding: 160px 0 120px;
 }

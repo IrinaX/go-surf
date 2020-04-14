@@ -48,24 +48,26 @@ var serfSlider = new Swiper('.serf-slider',{
         swiper: sliderMap,
     }
 });
-var travelSlider = new Swiper('.travel-slider',{
-    // spaceBetween: 40,
+var travelSlider = new Swiper('.holder-slider',{
     slidesPerView: 1,
-
     effect:'fade',
     fadeEffect: {
         crossFade: true
     },
-    // speed: 500,
-
-    // centeredSlides:true,
     navigation: {
-        // nextEl: '.swiper-button-next',
-        // prevEl: '.swiper-button-prev',/////////////////////////////////////////////////////////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         nextEl: '.slider__btn-next',
         prevEl: '.slider__btn-prev',
     },
-    // thumbs: {
-    //     swiper: sliderMap,
-    // }
+});
+
+var shopSlider = new Swiper('.shop-slider',{
+    slidesPerView: 1,
+    effect:'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    navigation: {
+        nextEl: '.slider__btn-next',
+        prevEl: '.slider__btn-prev',
+    },
 });
